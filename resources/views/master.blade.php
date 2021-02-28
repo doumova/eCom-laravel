@@ -29,5 +29,22 @@
         height: 500px;
         padding-top: 100px;
     }
+    img.slider-img{
+        height: 400px !important;
+    }
+    .descrip{
+        color: rgb(122, 182, 103)
+    }
+    .trainding-image{
+        height: 100px;
+    }
+    .trainding-wrapper{
+        margin: 30px;
+
+    }
+    .trainding-item{
+        float: left;
+        width: 20%;
+    }
 </style>
 </html>
