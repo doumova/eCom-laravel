@@ -46,5 +46,22 @@
         float: left;
         width: 20%;
     }
+    .detail-img{
+        height: 200px;
+        border-radius: 5px;
+        transition: transform .2s; /* Animation */
+
+    }
+    .detail-img:hover{
+          transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+    }
+    .container.details{
+        height: 500px;
+        
+    }
+    .search-box{
+        width: 500px !important;
+    }
 </style>
 </html>
