@@ -1,6 +1,6 @@
 @extends('master')
 @section("content")
-<div class="custom-product">
+<div class="container custom-product-order">
         <!-- Indicators -->
         {{-- <div class="col-sm-4">
             <a href="#">Filter</a>
@@ -29,19 +29,18 @@
               </table>
           
               <div>
-                <form action="#">
+                <form action="/orderplace" method="POST">
+                    @csrf
                     <div class="form-group">
-                        <textarea type="email" placeholder="Enter your adress " class="form-control"></textarea>
+                        <textarea name="address" type="text" placeholder="Enter your adress " class="form-control"></textarea>
                     </div>
                     <div class="form-group">
                       <label for="pwd">Payment method</label><br><br>
-                       <input type="radio" name="payment"> <span class="glyphicon glyphicon-globe"> Oneline Payment</span>
-                       <input type="radio" name="payment"> <span class="glyphicon glyphicon-credit-card"> Credit Cart</span>
-                       <input type="radio" name="payment"> <span class="glyphicon glyphicon-import"> Payment on Delivery</span><br><br>
-
-
+                       <input type="radio" value="cash" name="payment"> <span class="glyphicon glyphicon-globe"> Oneline Payment</span>
+                       <input type="radio" value="cash" name="payment"> <span class="glyphicon glyphicon-credit-card"> Credit Cart</span>
+                       <input type="radio" value="cash" name="payment"> <span class="glyphicon glyphicon-import"> Payment on Delivery</span><br><br>
                     </div>
-                    <button type="submit" class="btn btn-default">Order Now</button>
+                    <button type="submit" class="btn btn-success">Order Now</button>
                   </form>
               </div>
         </div>

@@ -29,8 +29,8 @@
         height: 500px;
         padding-top: 100px;
     }
-    .custom-product{
-        height: 500px;
+    .custom-product-order{
+        height: auto;
     }
     img.slider-img{
         height: 400px !important;
@@ -40,11 +40,20 @@
     }
     .trainding-image{
         height: 100px;
+        border-radius: 10px;
+    }
+    .trainding-image:hover{
+        transform: scale(1.5);
+    }
+    .trainding-image-myorders{
+        height: 150px;
+        border-radius: 10px;
     }
     .trainding-wrapper{
         margin: 30px;
 
     }
+   
     .trainding-item{
         float: left;
         width: 20%;
