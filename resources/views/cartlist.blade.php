@@ -8,6 +8,7 @@
         <div class="col-sm-10">
             <div class="trainding-wrapper">
                 <h3>Result for Search</h3>
+                <a href="/ordernow" class="btn btn-success">Order Now</a> <br><br>
                 @foreach($products as $item)
                 <div class="row search-item cart-list-devider">
                   <div class="col-sm-3">
@@ -30,6 +31,7 @@
                 </div>
                 @endforeach
           </div>
+          <a href="/ordernow" class="btn btn-success">Order Now</a> <br><br>
         </div>
 </div>
 @endsection
