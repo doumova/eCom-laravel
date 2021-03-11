@@ -6,8 +6,7 @@
             <a href="#">Filter</a>
         </div> --}}
         <div class="col-sm-10">
-            <table class="table">
-                
+            <table class="table"> 
                 <tbody>
                   <tr>
                     <td>Amount</td>
@@ -27,7 +26,6 @@
                   </tr>
                 </tbody>
               </table>
-          
               <div>
                 <form action="/orderplace" method="POST">
                     @csrf

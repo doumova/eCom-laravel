@@ -48,6 +48,7 @@ if (Session::has('user')) {
             </li>
             @else 
             <li><a href="/login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Login</a></li>
+            <li><a href="/register"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Register</a></li>
 
             @endif
         </ul>

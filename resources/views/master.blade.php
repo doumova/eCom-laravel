@@ -22,7 +22,6 @@
    @yield('content')
        {{--! ajouter le footer--}}
    {{View::make('footer')}}
-    
 </body>
 <style>
     .custom-login{

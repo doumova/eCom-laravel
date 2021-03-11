@@ -90,8 +90,8 @@ class ProductController extends Controller
             $order->address = $req->address;
             $order->save();
             Cart::where('user_id',$userId)->delete();
-
         }
+
         $req->input();
         return redirect('/');
     }
@@ -99,10 +99,14 @@ class ProductController extends Controller
     function myOrders()
     {
         $userId= Session::get('user')['id'];
-       $orders = DB::table('orders')
+        $orders = DB::table('orders')
         ->join('products','orders.product_id','=','products.id')
         ->where('orders.user_id',$userId)
         ->get();
-        return view ('myorders',['orders'=>$orders]);
+        return view('myorders',['orders'=>$orders]);
+    }
+    function register()
+    {
+        return view('/register');
     }
 }
