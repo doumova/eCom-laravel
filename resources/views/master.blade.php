@@ -39,18 +39,20 @@
     }
     .trainding-image{
         height: 100px;
-        border-radius: 10px;
+        border-radius: 5px;
     }
-    .trainding-image:hover{
+    .tr-thumbnail{
+        height: 150px;
+    }
+    /* .trainding-image:hover{
         transform: scale(1.5);
-    }
+    } */
     .trainding-image-myorders{
         height: 150px;
         border-radius: 10px;
     }
-    .trainding-wrapper{
-        margin: 30px;
-
+    .trainding-image-tr{
+        height: 150px;
     }
    
     .trainding-item{

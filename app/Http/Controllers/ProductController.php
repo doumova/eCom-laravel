@@ -109,4 +109,8 @@ class ProductController extends Controller
     {
         return view('/register');
     }
+    function errorPage()
+    {
+        return view('/errorpage');
+    }
 }
